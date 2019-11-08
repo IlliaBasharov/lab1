@@ -20,13 +20,4 @@ $(document).ready(function() {
         });
         return false;
     });
-    $.ajax({
-        url: 'listajax.php',
-        success: function(data) {
-            $('#ratesoption').html(data);
-        },
-        error:  function(){
-            alert('Возникла ошибка!');
-        }
-    })
 })
